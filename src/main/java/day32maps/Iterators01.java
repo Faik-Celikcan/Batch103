@@ -21,12 +21,13 @@ public class Iterators01 {
             w = w + "!";
         }
         System.out.println(myList);// [Z, K, A, J, M]
+
         ListIterator<String> itr = myList.listIterator();
+
         while(itr.hasNext()){
             String el = itr.next();
             itr.set(el + "!");
         }
         System.out.println(myList);// [Z!, K!, A!, J!, M!]
-
     }
 }
